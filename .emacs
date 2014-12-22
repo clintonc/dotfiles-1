@@ -2,10 +2,13 @@
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
 (require 'column-marker)
 (add-hook 'c-mode-hook (lambda () (interactive) (column-marker-1 78)))
+(add-hook 'c++-mode-hook (lambda () (interactive) (column-marker-1 78)))
 
 ;;(require 'linux-style-c)
 (setq c-default-style
            '((c-mode . "linux")))
+(setq c-default-style
+           '((c++-mode . "linux")))
 
 (setq-default show-trailing-whitespace t)
 
@@ -17,6 +20,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.ae\\'" . c-mode))
 (add-to-list 'auto-mode-alist '("\\.hae\\'" . c-mode))
+(add-to-list 'auto-mode-alist '("\\.cu\\'" . c++-mode))
 
 ;;Use aspell instead of ispell
 (setq ispell-program-name "aspell")
