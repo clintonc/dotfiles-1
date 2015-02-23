@@ -9,6 +9,9 @@
            '((c-mode . "linux")))
 (setq c-default-style
            '((c++-mode . "linux")))
+(setq-default c-basic-offset 8
+	      tab-width 8
+	      indent-tabs-mode t)
 
 (setq-default show-trailing-whitespace t)
 
