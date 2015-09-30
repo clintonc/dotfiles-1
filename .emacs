@@ -30,4 +30,9 @@
 (setq ispell-list-command "list")
 (setq ispell-extra-args '("--sug-mode=ultra"))
 
+;;F5-F8 used for development-oriented commands
 (global-set-key (quote [f5]) 'compile)
+(global-set-key (quote [f6]) 'vc-diff)
+
+;;F9-F12 used for text-oriented commands
+(global-set-key (quote [f9]) 'unfill-paragraph)
