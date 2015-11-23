@@ -7,11 +7,11 @@
 #
 # To enable this hook, rename this file to "pre-commit".
 
-# If any lines contain MLC, must opt-in to committing (or
-# re-committing) them.
-git grep 'MLC\|TODO'
+# If any lines contain magic words indicating a need for review, must
+# opt-in to committing (or re-committing) them. Obfuscated so as to
+# not detect it in this repo.
+git grep 'ML[C]\|TOD[O]'
 rc=$?
-echo rc is ${rc}
 if [ "${rc}" -eq "0" ]; then
     echo "Do you wish to commit with these outstanding items?"
     # Needed to read resp below
