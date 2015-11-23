@@ -1,0 +1,7 @@
+[user]
+	email = mlcurry@sandia.gov
+	name = Matthew L. Curry
+[push]
+	default = simple
+[init]
+	templatedir = ~/.git_template
