@@ -3,6 +3,7 @@
 (require 'column-marker)
 (add-hook 'c-mode-hook (lambda () (interactive) (column-marker-1 78)))
 (add-hook 'c++-mode-hook (lambda () (interactive) (column-marker-1 78)))
+(add-hook 'tex-mode-hook (lambda () (interactive) (column-marker-1 80)))
 
 ;;(require 'linux-style-c)
 (setq c-default-style
