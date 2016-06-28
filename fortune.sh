@@ -10,6 +10,8 @@ FORTUNES=(
     "Try the anti-fragile system of idea generation.\n1. Get an idea. Fight the idea high.\n2. Instantly and brutally try to defeat the idea. When will it not work? Can you test it? Stress it?\n3. If it survives, it has legs, and should be further implemented and investigated.\n4. If it's implemented and works, great.\n5. If it fails, you can move on without feeling the crash of a failed idea, because it was not your pet, and you didn't obsess over it."
 
     "How are you feeling right now? If you don't feel good, figure out why, and fix it."
+
+    "The following foods can neutralize garlic breath:\n1. Parsley\n2. Apples\n3. Spinach\n4. Mushrooms\n5. Basil\n6. Citrus fruits\n7. Milk"
 )
 
 #echo ${#FORTUNES[@]}
