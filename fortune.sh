@@ -14,9 +14,8 @@ FORTUNES=(
     "The following foods can neutralize garlic breath:\n1. Parsley\n2. Apples\n3. Spinach\n4. Mushrooms\n5. Basil\n6. Citrus fruits\n7. Milk"
 )
 
-#echo ${#FORTUNES[@]}
 fortune() {
     echo
     echo -e ${FORTUNES[$(echo -e ${RANDOM} \% ${#FORTUNES[@]} | bc)]} | fold -s -w ${COLUMNS}
+    echo
 }
-#echo ${FORTUNES[0]}
