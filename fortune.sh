@@ -16,6 +16,6 @@ FORTUNES=(
 
 fortune() {
     echo
-    echo -e ${FORTUNES[$(echo -e ${RANDOM} \% ${#FORTUNES[@]} | bc)]} | fold -s -w ${COLUMNS}
+    echo -e ${FORTUNES[$(echo -e ${RANDOM} \% ${#FORTUNES[@]} | bc)]} | fold -s -w $(tput cols)
     echo
 }
