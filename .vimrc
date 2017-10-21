@@ -31,6 +31,25 @@ set guioptions-=L
 
 call plug#begin()
 
+" An intelligent python plugin.
+" :help jedi-vim.txt
+Plug 'davidhalter/jedi-vim'
+
+" A helper plugin for defining text objects.
+Plug 'kana/vim-textobj-user'
+
+" Defines the text object ',' for arguments to functions.  For example, use
+" da, to remove the argument under the cursor from an argument list.
+Plug 'sgur/vim-textobj-parameter'
+
+" Defines the text object 'i' for an indentation level.  For example, use cii
+" to replace the indented body of a loop.
+Plug 'michaeljsmith/vim-indent-object'
+
+" Sublime Text-like multiple cursors.
+" :help vim-multiple-cursors.txt
+Plug 'terryma/vim-multiple-cursors'
+
 " Sensible defaults for vim.
 Plug 'tpope/vim-sensible'
 
